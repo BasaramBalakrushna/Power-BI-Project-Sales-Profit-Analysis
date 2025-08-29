@@ -132,3 +132,18 @@ With clean data and interactive visuals, the dashboard:
 
 ## 📁 Repository Structure  
 
+/PowerBI-Sales-Profit-Analysis
+│
+├─ data/
+│ ├─ data.csv
+│ ├─ additional.csv
+│ └─ customers.csv
+│
+├─ reports/
+│ └─ PowerBI_Report.pbix
+│
+├─ docs/
+│ ├─ data_dictionary.md
+│ └─ transformation_steps.md
+│
+└─ README.md

@@ -60,7 +60,9 @@ We worked with **3 datasets**:
 
 ### 🟦 Page 1 — Sales & Profits by Sales Rep  
 
-<img width="1129" height="632" alt="image" src="https://github.com/user-attachments/assets/cfea55c7-4dce-4bdb-afaf-2db8faa4f95d" />
+
+<img width="1123" height="625" alt="Sales_Rep" src="https://github.com/user-attachments/assets/0f98fece-5bce-4708-b04f-01761158823d" />
+
 
 
 - 📊 **Clustered Column Chart**: Sales by Sales Rep across regions (East, North, South, West)  
@@ -75,7 +77,8 @@ We worked with **3 datasets**:
 
 ### 🟩 Page 2 — Sales & Profits by Customer  
 
-<img width="1131" height="634" alt="image" src="https://github.com/user-attachments/assets/dac92161-8f35-4d7b-8f30-f3023797a2cb" />
+<img width="1125" height="628" alt="Customer" src="https://github.com/user-attachments/assets/66f48cf5-0e64-4044-be39-60cdf3597fc0" />
+
 
 
 - 📊 **Clustered Column Chart**: Sales by Customers across regions  
@@ -89,7 +92,8 @@ We worked with **3 datasets**:
 
 ### 🟨 Page 3 — Detailed Table View  
 
-<img width="1138" height="636" alt="image" src="https://github.com/user-attachments/assets/b2c9b488-8e1f-4917-a012-b9d888f82f52" />
+<img width="1122" height="632" alt="Tables" src="https://github.com/user-attachments/assets/ccf7c393-2623-44f1-81c2-ca78ff25acf6" />
+
 
 
 - 📋 **Table View**: Record-level data (Year, Month, Day, Rep, Customer, Sales, Profit, Region)  

@@ -1,5 +1,3 @@
-<!-- README.md for Power BI Project: Sales & Profit Analysis -->
-
 # 📊 Power BI Project — **Sales & Profit Analysis**
 
 [![Power BI](https://img.shields.io/badge/Tool-Power%20BI-FFB000?style=for-the-badge&logo=power-bi)]()
@@ -8,35 +6,35 @@
 
 ---
 
-## ❓ Problem Statement
+## ❓ Problem Statement  
 
 The company wanted to **analyze its Sales and Profit performance** by:  
 - 📊 **Sales Representative** – Who is generating the highest sales and profit?  
 - 🧑‍🤝‍🧑 **Customer** – Which customers contribute the most to revenue and profitability?  
 - 🌍 **Region** – How performance varies across different regions  
-- 📅 **Time (Year, Month, Day)** – What trends can be observed over time?
+- 📅 **Time (Year, Month, Day)** – What trends can be observed over time?  
 
 👉 **Goal:** Build an **interactive Power BI dashboard** to provide clear, drill-down insights for better decision-making.
 
 ---
 
-## 🚀 Project Summary
+## 🚀 Project Summary  
 
-An end-to-end Business Intelligence project demonstrating how raw, fragmented sales data is transformed into an actionable Power BI solution.
+An end-to-end Business Intelligence project demonstrating how raw, fragmented sales data is transformed into an actionable Power BI solution.  
 
 **Workflow:**  
-**Data Preparation → Cleaning (Power Query) → Modeling → Interactive Reporting**
+`Data Preparation → Cleaning (Power Query) → Modeling → Interactive Reporting`
 
 ---
 
-## 📂 Data Sources
+## 📂 Data Sources  
 
-We worked with **3 datasets**:
+We worked with **3 datasets**:  
 
 - 📁 `data.csv` & `additional.csv`  
   *Columns:* `Date, Sales Rep, Customer Code, Sales, Profit, Region`  
 - 📁 `customers.csv`  
-  *Columns:* `Customer Code, Customer Name, Association Date`
+  *Columns:* `Customer Code, Customer Name, Association Date`  
 
 **Modeling steps:**  
 - ➕ Append `data.csv` + `additional.csv` → `new_data`  
@@ -45,91 +43,92 @@ We worked with **3 datasets**:
 
 ---
 
-## 🧹 Data Cleaning & Transformation (Power Query)
+## 🧹 Data Cleaning & Transformation (Power Query)  
 
-Applied a robust set of transformations to ensure data quality and modeling readiness:
-
-- 🗑️ Remove nulls, errors, duplicates  
-- 🔤 Text transforms: uppercase, trim, check length  
-- 🔁 Replace values: nulls → 0 or dataset average (as appropriate)  
-- 📅 Column formatting: Date/Time, Decimal types  
-- ✂️ Split `Date` → Year / Month / Day  
-- 📊 Group By → Total Sales per Sales Rep  
-- 🔄 Unpivot columns for flexible analysis  
-- 📥 Fill Down / Fill Up for missing categorical values  
-- 📑 Reorder columns for readability and performance  
-- ⚡ Load only final tables to the model for efficiency
+- 🗑️ Removed nulls, errors, duplicates  
+- 🔤 Standardized text (uppercase, trim, etc.)  
+- 🔁 Replaced values (nulls → 0 or averages as needed)  
+- 📅 Split `Date` into **Year, Month, Day**  
+- 📊 Aggregated **Sales by Sales Rep**  
+- 🔄 Unpivoted columns for flexible analysis  
+- 📥 Used **Fill Down/Fill Up** to handle missing categories  
+- ⚡ Optimized by loading only clean final tables into model  
 
 ---
 
-## 📈 Dashboard Overview
+## 📈 Dashboard Overview  
 
-### 🟦 Page 1 — Sales & Profits by Sales Rep
-- 📊 Clustered Column Chart: Sales by **Sales Rep & Region**  
-- 🥧 Pie Chart: Profit share by **Sales Rep**  
-- 📝 Multi-row Card: Total Sales & Profit by Rep  
-- 🎛️ Slicers: Year, Month, Day  
-- 🔗 Sync Slicers: Linked with Page 2 & Page 3
+### 🟦 Page 1 — Sales & Profits by Sales Rep  
 
-### 🟩 Page 2 — Sales & Profits by Customer
-- 📊 Clustered Column Chart: Sales by **Customer & Region**  
-- 🥧 Pie Chart: Profit share by **Customer**  
-- 📝 Multi-row Card: Sales, Profit, Rep & Customer details  
-- 🎛️ Slicers: Year & Month (example: 2005)
+<img width="1129" height="632" alt="image" src="https://github.com/user-attachments/assets/cfea55c7-4dce-4bdb-afaf-2db8faa4f95d" />
 
-### 🟨 Page 3 — Detailed Table View
-- 📋 Table: Year, Month, Day, Sales Rep, Customer, Sales, Profit, Region  
-- 🧮 Matrix: Customers (rows) × Sales Reps (columns) → Sales & Profit  
-- 🔗 Slicer Sync: Filters applied from Page 1 & Page 2 (invisible filters active)
+
+- 📊 **Clustered Column Chart**: Sales by Sales Rep across regions (East, North, South, West)  
+- 🥧 **Pie Chart**: Profit distribution by Sales Rep  
+- 📝 **Cards**: Total Sales & Profit by each Rep  
+- 🎛️ **Slicers**: Year, Month, Day for drill-down  
+- 🔗 **Sync**: Connected with Page 2 & 3  
+
+📌 **Insight**: Bruce, Abhay, and Charley are top performers, while others show varied contributions across regions.  
 
 ---
 
-## 🎯 Guided Use Case
+### 🟩 Page 2 — Sales & Profits by Customer  
 
-**Scenario:** Select **Day = 7** and **Month = January** on Page 1.  
-**Result:**  
-- ✔ Page 2 displays the matching **customer breakdown**.  
-- ✔ Page 3 provides **record-level verification** via Table & Matrix.
+<img width="1131" height="634" alt="image" src="https://github.com/user-attachments/assets/dac92161-8f35-4d7b-8f30-f3023797a2cb" />
 
----
 
-## ✅ Final Outcome & Business Impact
+- 📊 **Clustered Column Chart**: Sales by Customers across regions  
+- 🥧 **Pie Chart**: Profit contribution by Customers  
+- 📝 **Cards**: Top customers with linked Sales Reps  
+- 🎛️ **Slicers**: Year & Month for filtering  
 
-With clean data and interactive visuals, the dashboard:
-- 🔎 Compares Sales Reps & Customers side-by-side  
-- 🌍 Highlights Region-wise performance and opportunities  
-- 📅 Enables drill-down by Year → Month → Day for trend discovery  
-- 📊 Provides cross-validation through Tables & Matrices for auditability
-
-**Business value:** Faster decision-making, clear identification of top-performing reps/customers, and actionable insights to optimize sales and profitability.
+📌 **Insight**: Shah Associates and Namint Enterprises generate the highest revenue, while other customers bring moderate profitability.  
 
 ---
 
-## 🛠️ Tools & Skills
+### 🟨 Page 3 — Detailed Table View  
 
-- **Power BI** — Data modeling, interactive visuals, slicer sync, drill-down  
-- **Power Query (M)** — ETL, cleaning, transformation logic  
-- **DAX (basic/medium)** — Calculated measures & KPIs (as required)  
-- **ETL Concepts** — Append, Merge, Unpivot, Group By, Fill Down/Up  
-- **Data Visualization & Storytelling** — Dashboard design for business users
+<img width="1138" height="636" alt="image" src="https://github.com/user-attachments/assets/b2c9b488-8e1f-4917-a012-b9d888f82f52" />
+
+
+- 📋 **Table View**: Record-level data (Year, Month, Day, Rep, Customer, Sales, Profit, Region)  
+- 🧮 **Matrix View**: Customers × Sales Reps → Sales & Profit breakdown  
+- 🔗 Slicer Sync ensures filters apply consistently across pages  
+
+📌 **Insight**: Provides transparency and validation for numbers shown in Page 1 & 2 dashboards.  
 
 ---
 
-## 📁 Repository Structure (Suggested)
+## 🎯 Use Case Example  
 
-/PowerBI-Sales-Profit-Analysis
-│
-├─ data/
-│ ├─ data.csv
-│ ├─ additional.csv
-│ └─ customers.csv
-│
-├─ reports/
-│ └─ PowerBI_Report.pbix
-│
-├─ docs/
-│ ├─ data_dictionary.md
-│ └─ transformation_steps.md
-│
-└─ README.md
+👉 Select **Day = 7** and **Month = January** on Page 1.  
+
+✔ Page 2 updates with **customer breakdown**  
+✔ Page 3 shows **row-level records** for validation  
+
+---
+
+## ✅ Final Outcome & Business Impact  
+
+With clean data and interactive visuals, the dashboard:  
+- 🔎 Identifies **top-performing Sales Reps & Customers**  
+- 🌍 Highlights **region-wise opportunities**  
+- 📅 Enables **time-based trend analysis**  
+- 📊 Offers **audit-friendly views** for cross-checking  
+
+**Business Value:** Faster decisions, clear insights, and ability to focus on **high-profit customers & reps**.  
+
+---
+
+## 🛠️ Tools & Skills  
+
+- **Power BI** – data modeling, visuals, slicer sync  
+- **Power Query (M)** – ETL & transformations  
+- **DAX** – custom measures  
+- **Data Visualization & Storytelling** – professional dashboarding  
+
+---
+
+## 📁 Repository Structure  
 
